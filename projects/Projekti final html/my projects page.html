@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>MY PROJECT'S </h1  
+  <hr>
+  <br>
+  Home page <button>Home page</button>
+  <br>
+  contact me <button>CONTACT ME</button>
+
+<h2>MY PROJECT LIST'S</h2> <div id="P1"></div> <div id="P6"></div>
+<p>Those are my project list's that i worked on.</p>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="https://th.bing.com/th/id/R.404ceacad21124d2159f8f8e84138402?rik=TkkAZwPZvRoamg&pid=ImgRaw&r=0" alt="Personal financial tracking app" style="width:100%">
+      <h3>Personal financial tracking app</h3>
+      <p>Eeveryday counting on expenses and monthly statment of your expense.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content"><div 
+        id="p2"></div>
+    <img src="https://th.bing.com/th/id/R.577de1911edb7174aaaf6b081921fded?rik=oGmKTnO12S8skw&riu=http%3a%2f%2frickyvuckovic.com%2fwp-content%2fuploads%2f2014%2f12%2feasy-jumping-game-1.png&ehk=8h5Fw3fGz3uX%2fnK5ee5xA2qs3GOqBlfr8dqWn5NsOKY%3d&risl=&pid=ImgRaw&r=0" alt="Simple Jumping game" style="width:50%">
+      <h3>SIMPLE JUMPING GAME</h3>
+      <p>Are you bored play a simple jumping game to get rid of the boring part of the day.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content"> <div id="p3"></div>
+    <img src="https://th.bing.com/th/id/R.5568f5360d65d1d6ed70036fd5a0de94?rik=H5TKpuDHxSUCHg&pid=ImgRaw&r=0" alt="Chating APLICATION" style="width:100%">
+      <h3>Chating application</h3>
+      <p>Make everyday chating easy to reach out to your friends and family for free or to make bussenes calls</p> <div id="p4"></div>
+    </div>
+  </div>
+  <div 
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+
+</div>
+
+<!-- END MAIN -->
+</div>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+<button class="open-button" onclick="openForm()">Chat</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Chat</h1>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+</body>
+</html>
+
+<p>Copyright ©YLL BALIU</p>
+</body>
+</html>
