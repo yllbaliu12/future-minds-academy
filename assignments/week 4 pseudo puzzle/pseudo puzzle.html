@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Hover Paragraph</title>
+    <style>
+        body, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        .content {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        .hover-paragraph {
+            background-color: #f0f0f0;
+            padding: 10px;
+            transition: background-color 0.3s, font-size 0.3s, color 0.3s;
+            line-height: 1.5;
+        }
+
+        .hover-paragraph:hover {
+            background-color: #3498db;
+            color: #fff;
+            transform: scale(1.05);
+        }
+
+        .hover-paragraph span:first-child {
+            font-size: 5em; 
+            font-weight: bold;
+            float: left;
+            margin-right: 2px; 
+        }
+
+       
+        .hover-paragraph::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <p class="hover-paragraph">
+            <span>T</span>his is a sample paragraph. Hover anywhere on this paragraph to see the effects.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at elit nisi.
+            Proin consequat viverra justo, in fermentum purus efficitur a. Suspendisse potenti.
+            Pellentesque consectetur auctor elit, sit amet semper risus. Aliquam erat volutpat.
+        </p>
+    </div>
+</body>
+</html>
