@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <style>
+      
+        body {
+            background-color: pink;
+            margin: 0;
+            padding: 0;
+        }
+
+        .card-container {
+            display: flex;
+            border: 1px solid black; 
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background-color: #ff0000;
+            transition: transform 0.2s ease-in-out;
+            width: 300px;
+            margin: 10px;
+            position: relative;
+            flex-direction: column;
+        }
+
+        .card-container:hover {
+            transform: scale(1.05);
+        }
+
+        .card-info-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #ff0000;
+        }
+
+        .card-title {
+            font-size: 1.2rem;
+            margin: 0;
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 8px 0 0 0;
+            z-index: 1;
+        }
+
+        .card-date {
+            font-size: 0.9rem;
+            color: bisque;
+            background-color: #020202;
+        }
+
+        .card-copyright {
+            font-size: 0.8rem;
+            color: bisque;
+            background-color: #020202;
+            
+        }
+
+        .card-container:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-container:hover .card-title {
+            color: #c5aa98;
+        }
+
+        .price-sizes-box {
+            display: flex;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 10px;
+            background-color: #800080;
+            color: white;
+            text-align: center;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .price-box {
+            flex: 1;
+            padding: 10px;
+            border-right: 1px solid #fff;
+        }
+
+        .sizes-box {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .card-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card-price {
+            font-size: 1rem;
+            margin: 0;
+        }
+
+        .card-sizes {
+            font-size: 0.9rem;
+            color: #fff;
+            background-color: transparent;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: #020202;
+            color: bisque;
+
+        
+        }
+
+        .add-to-cart {
+            display: flex;
+            justify-content: center;
+            background-color: black; 
+            padding: 10px;
+            margin-top: auto; 
+        }
+
+        .add-to-cart button {
+            color: bisque;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+    <div class="card-container">
+        <div class="price-sizes-box">
+            <div class="price-box">
+                <div class="card-price">$150.99</div>
+            </div>
+            <div class="sizes-box">
+                <label for "size" style="font-size: 0.9rem; color: #fff; margin-right: 5px;">Size:</label>
+                <select class="card-sizes" id="size">
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+        </div>
+        <h2 class="card-title">NIKE EPIC REACT FLYKNIT</h2>
+        <div class="card-footer">
+        
+        </div>
+        <img class="card-image" src="shoe.webp" alt="Card Image">
+        <div class="add-to-cart">
+            <button>Add to Cart</button>
+            
+        </div>
+        <p class="card-date">Published: October 18, 2023</p>
+        <p class="card-copyright">© 2023 SHOE COMPANY</p>
+        
+    </div>
+</body>
+</html>
