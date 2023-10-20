@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(0, 0, 0);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card-container {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid black;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+            width: 300px;
+        }
+
+        .card-title {
+            font-size: 1.2rem;
+            margin: 0;
+            color: #513636;
+            background-color: rgb(255, 255, 255);
+            border-radius: 0 0 8px 8px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .card-details {
+            padding: 10px;
+        }
+
+        .card-date {
+            font-size: 0.9rem;
+            color:rgb(117, 37, 117);
+            background-color: white;
+            text-align: center;
+        }
+
+        .card-options {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: pink;
+        }
+
+        .card-options p {
+            margin: 0;
+            color: white;
+        }
+
+        .card-image {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <img class="card-image" src="photo-1589085947445-a491beee038d.jpeg" alt="Card Image">
+        <h2 class="card-title">POST ONE</h2>
+        <div class="card-details">
+            <p class="card-date">4 days</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ex voluptas odit qui corrupti, maiores provident dolorum at alias dignissimos! Quas, debitis.</p>
+            <div class="card-options">
+                <p class="read">4m</p>
+                <p class="comment">21 comments</p>
+                <p class="view-options">5123 views</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
