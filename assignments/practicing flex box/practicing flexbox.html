@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .search-bar {
+            width: 15em;
+            padding: 0.5em;
+            margin: 1em; /* Corrected "lem" to "1em" */
+            border-radius: 7em;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            box-shadow: inset 0px 0px 20px lightgrey; /* Corrected "Opx" to "0px" */
+            color: rgb(144, 144, 144);
+        }
+
+        .search-bar-input {
+            flex-grow: 1;
+            border: none; /* Corrected "," to ";" */
+            background-color: transparent;
+            outline: none;
+            font-size: 1.2em;
+            color: inherit;
+        }
+
+        .search-bar-input::placeholder { /* Corrected "::" instead of ": :" */
+            color: #b6b6b6;
+        }
+
+        .search-icon {
+            width: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <span class="search-bar">
+        <input type="text" class="search-bar-input" placeholder="Search">
+        <img class="search-icon" src="search.svg">
+    </span>
+</body>
+</html>
